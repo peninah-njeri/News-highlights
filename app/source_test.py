@@ -1,8 +1,7 @@
 import unittest
-from models import source
-Source = source.Source
+from Models import source
 
-class sourceTest(unittest.Testcase):
+class SourceTest(unittest.TestCase):
 
     '''
     Test Class to test the behaviour of the Newz class
@@ -12,8 +11,8 @@ class sourceTest(unittest.Testcase):
         '''
         Set up method that will run before every Test
         '''
-        self.new_news = source("one","Cryptohopper Just Hit 100k Users on Their Trading Platform","http://businesswire.sys-con.com/node/4376242","ear and t completely automatically. When you sign up and configur…","pa","gekohwgoeg","Cryptohopper just announced that it hit 100k users on their trading ")
+        self.new_source = Source("one","Cryptohopper Just Hit 100k Users on Their Trading Platform","http://businesswire.sys-con.com/node/4376242","ear and t completely automatically. When you sign up and configur…","pa","gekohwgoeg","Cryptohopper just announced that it hit 100k users on their trading ")
     def test_instance(self):
-        self.assertTrue(isinstance(self.new_news,source))
+        self.assertTrue(isinstance(self.new_source,Source))
 if __name__=='__main__':
     unittest.main()
