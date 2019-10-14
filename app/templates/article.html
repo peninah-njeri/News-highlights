@@ -1,0 +1,22 @@
+{% extends 'base.html'%}
+<!-- Content block -->
+{% block content %}
+<div class="container">
+   <!-- Poster background -->
+   <div class="row">
+       {% for article in article %}
+           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4" style="margin-bottom: 20px;">
+           <img src="{{article.urlToImage}}" alt="{{article.title}}" class="img-responsive" style="height: 200px;">
+           <p>{{ article.author}}</p>
+           <h3>{{ article.title }}</h3>
+           <p> {{ article.description }}</p>
+           <p>{{article.content}}</p>
+           <p>{{article.publishedAt}}</p>
+           <a href={{article.url}} target="_blank"class="btn" style="background-color: pink; color: rgb(109, 8, 34); margin-top: 5px;">Read Full Article</a>
+       </div>
+       {% endfor %}
+   </div>
+</div>
+{% endblock %}
+
+

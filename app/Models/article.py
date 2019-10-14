@@ -1,8 +1,13 @@
 class Article:
-    def __init__(self, title, author, image_url, date_published, article_url, source):
-        self.title = title
-        self.author = author
-        self.date_published = date_published
-        self.article_url = article_url
-        self.image_url = image_url
-        self.source = source
+   '''
+   Source class to define Article objects
+   '''
+   def __init__(self,id,author,title,description,url,urlToImage,publishedAt,content):
+       self.id=id
+       self.author=author
+       self.title=title
+       self.description=description
+       self.url=url
+       self.urlToImage=urlToImage
+       self.publishedAt=publishedAt
+       self.content=content
