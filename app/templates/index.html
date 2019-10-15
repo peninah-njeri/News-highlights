@@ -1,6 +1,6 @@
-{% extends 'base.html'%}
+{% extends 'base.html'%}}
 {% import 'macros.html' as macro%}
-
+<!-- Styles block -->
 {% block styles%}
    {{ super() }}
    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
@@ -13,7 +13,7 @@
        {% if title %}
        <title> {{ title }}</title>
        {% else %}
-       <title> Welcome to the best News Website  Online  </title>
+       <title>  </title>
        {% endif %}
 <!-- Styles block -->
 <!-- Content block -->
@@ -22,15 +22,15 @@
        {% block content %}
    <div class="container">
            <hr>
-           <div class="row">
-               <div class="jumbotron">
+           <div class="row" >
+            
                    <div class="col-md-12">
                        <h2 class="text-center" style="font-size: 35px; color: rgb(39, 49, 48)">General News</h2>
                    </div>
                    <br>
                </div>
                {{macro.displaySourceList(general)}}
-           </div>
+         
            <hr>
            <div class="row" id="entertainment">
                <div class="col-md-12">
@@ -48,8 +48,11 @@
                {{macro.displaySourceList(sports)}}
            </div>
    </div>
+</div>
 {% endblock%}
+
    </body>
+
 </html>
 
 
@@ -57,6 +60,5 @@
 
 
 
-Message Alex Kiprop Kiplagat
 
 

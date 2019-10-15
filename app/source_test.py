@@ -12,10 +12,12 @@ class SourceTest(unittest.TestCase):
         '''
         Set up method that will run before every Test
         '''
-        self.new_source = Source('the-washington-post','The Washngton post','A world class news channel')
+        self.new_source = Source(
+            'the-washington-post', 'The Washngton post', 'A world class news channel')
 
     def test_instance(self):
-        self.assertTrue(isinstance(self.new_source,Source))
+        self.assertTrue(isinstance(self.new_source, Source))
+
 
 if __name__ == '__main__':
     unittest.main()
